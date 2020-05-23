@@ -1,0 +1,497 @@
+/*Estilos Gerais*/
+body{
+	font-family: 'Roboto', sans-serif;
+}
+.row{
+	margin: 0;
+}
+.container{
+	padding: 70px 0;
+}
+p, li{
+	color: #828282;
+	font-size: 14px;
+}
+/*Barra de navegação*/
+header, .navbar{
+	background-color: #363636;
+}
+#nav-container{
+	padding-top: 0;
+	padding-bottom: 0;
+}
+#logo{
+	width: 75px;
+}
+.navbar-brand{
+	padding: 0;
+	color: #BBFFFF;
+	font-weight: 300;
+}
+.pink{
+	color: rgb(243 180 245);
+	font-weight: bold;
+}
+#navbar-links a{
+	color: #D3D3D3;
+}
+.navbar-expand-lg .navbar-nav .nav-link{
+	padding: 1rem 0.8rem;
+}
+/*mainSlider - banners*/
+.container-fluid{
+	padding: 0;
+}
+#mainSlider .carousel-inner, #mainSlider .carousel-item{
+	height: 90vh;
+}
+#mainSlider .carousel-caption{
+	top: 30%;
+}
+#mainSlider .carousel-caption h2{
+	font-size: 50px;
+	margin-bottom: 30px;
+	text-shadow: 0.1em 0.1em 0.2em black;	
+}
+#mainSlider .carousel-caption p{
+	font-size: 25px;
+	font-weight: 300;
+	margin-bottom: 100px;
+	color: #FFF;
+	text-shadow: 0.1em 0.1em 0.2em black;
+}
+.main-btn{
+	background-color: transparent;
+	border: 1px solid #FFF;	
+	border-radius: 30px;
+	color: #FFF;
+	letter-spacing: 0.2rem;
+	text-shadow: 0.1em 0.1em 0.2em gray;
+	text-transform: uppercase;	
+	padding: 12px 20px;	
+	transition: 0.5s;
+}
+.main-btn:hover{
+	text-decoration:none;
+	color:#1E90FF;
+	background-color: #FFF;	
+	text-shadow: none;
+	font-weight: 700;
+}
+/*Sobre a Agência*/
+#about-area{
+	background-color: #F9F9F9;	
+}
+#about-area .img-fluid{	
+	background: 100%;	
+	object-fit: cover;
+}
+.main-title{
+	color: #696969;
+	margin: 0 0 65px 0;
+	font-size: 32px;
+	text-align: center;
+}
+.main-title::after{
+	content: "";
+	border-top: 2px solid #828282;
+	width: 15%;
+	position: absolute;
+	top: 60px;
+	left: 42.5%;	
+	align-items: center;
+}
+.about-title{
+	font-size: 16px;
+	color: #696969;
+	text-transform: uppercase;
+	font-weight: bold;
+	word-spacing: 0.1rem;
+}
+.row p{
+	text-align: justify;
+}
+#about-list{
+	list-style: none;
+	padding-left: 0;
+}
+#about-list li{
+	line-height: 30px;	
+}
+#about-list i{
+	color: #00BFFF;
+	margin-right: 15px;
+}
+/*Serviços*/
+.service-box{
+	text-align: center;
+	margin-bottom: 50px;
+}
+.service-box i, .service-box h4{
+	transition: 0.5s;
+}
+.service-box i{
+	font-size: 36px;
+	margin-bottom: 20px;
+	color: #696969;
+}
+.service-box:hover > i, .service-box:hover > h4{
+	color: #00BFFF;
+}
+.circle-box div{
+	padding: 0 40px;
+}
+.progressbar-text{
+	font-weight: bold;
+	font-size: 32px;
+}
+#data-area p{
+	color: #E8E8E8;
+	text-align: center;
+	font-size: 22px;
+	margin-top: 20px;
+}
+/*Time*/
+#team-area div>img{
+	max-width: 35%;
+}
+.col-md-3{
+	margin-top: 30px;
+}
+.card{
+	align-items: center;
+	text-align: center;
+}
+.card img{
+	margin-top: 10px;
+}
+/*Trabalho conosco*/
+#apply-area{
+	height: 500px;
+}
+#apply-area .container-fluid, #apply-area .row{
+	height: 100%;
+}
+#apply-area .apply-box{
+	text-align: center;
+	padding: 70px 50px;
+}
+#company-img{
+	background-image: url('../img/trabalheconosco.jpg');
+	background-size: cover;
+	height: 100%;
+}
+#pattern-img h4, #pattern-img p{
+	color: #E8E8E8;
+}
+#pattern-img h4{
+	margin-top: 6%;
+	margin-bottom: 30px;
+	text-transform: uppercase;
+}
+#pattern-img p{
+	margin-bottom: 30px;
+	font-size: 14pt;
+	font-weight: 100;
+}
+/*Portfólio*/
+.project-box{
+	margin-bottom: 30px;	
+}
+.project-box img{
+	width: 350px;
+	height: 200px;
+	object-fit: cover;
+}
+#filter-btn-box{
+	margin-bottom: 50px;
+	text-align: center;
+}
+#portfolio-area .filter-btn{
+	color: #828282;
+	text-shadow: none;	
+	border: 1px solid #828282;
+	background-color: transparent;
+	margin-right: 10px;
+	padding: 5px 10px;
+	font-size: 14px;
+}
+#portfolio-area .filter-btn.active, #portfolio-area .filter-btn:hover{
+	color: #FFF;
+	background-color: #1E90FF;
+	border-color: #1E90FF;
+}
+/*Newsletter*/
+#news-area{
+	text-align: center;
+	background-color: #F9F9F9;
+}
+#news-area p{
+	font-size: 20px;
+	margin-bottom: 40px;
+}
+#email-input{
+	border-radius: 0;
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+	border-right: 0;	
+	border: 1px solid #00BFFF;
+	display: inline;
+}
+.form-news{
+	width: 40%;
+	margin: 0 15em 0 15em;
+	align-items: center;
+	box-sizing: border-box;
+		
+}
+#news-btn{
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+	border: 1px solid #00BFFF;
+	background-color: #00BFFF;
+	letter-spacing: 0.2rem;
+	color: #FFF;
+	text-transform: uppercase;	
+	height: 38px; 
+	padding: 0 30px;
+	margin-left: -1px;
+	position: absolute;
+	transition: 0.8s;
+}
+#news-btn:hover{
+	background-color: transparent;
+	color: #00BFFF;
+	font-weight: bold;
+}
+/*Call to action*/
+#call-area{
+	background-color: #00BFFF;
+	text-transform: uppercase;
+}
+#call-area .container{
+	padding: 40px 100px;
+}
+#call-area .row{
+	display: block;
+	text-align: center;	
+}
+#call-area p{
+	color: #FFF;
+	font-weight: bold;
+	font-size: 24px;
+	width: auto;
+	letter-spacing: 2px;
+	margin-bottom: 0;
+	display: inline;
+	height: 60px;
+	line-height: 60px;
+}
+#call-area #call-btn{
+	background-color: transparent;
+	border: 1px solid #FFF;
+	color: #FFF;
+	font-weight: bold;
+	font-size: 18px;
+	margin-left: 30px;
+	width: auto;
+	letter-spacing: 2px;
+	text-shadow: none;
+}
+/*Footer*/
+#contact-area, #contact-area p{
+	text-align: center;	
+}
+.contact-box{
+	padding-bottom: 50px;
+	margin-bottom: 50px;
+	border-bottom: 1px solid #607B8B;
+}
+.contact-box i{
+	color: #696969;
+	border: 1px solid #696969;
+	border-radius: 50%;
+	width: 55px;
+	height: 55px;
+	line-height: 55px;
+	font-size: 22px;
+	margin-bottom: 20px;
+}
+.contact-box p{
+	font-size: 16px;
+}
+.contact-title{
+	font-weight: bold;
+	color: #00BFFF;
+}
+#msg-box p{
+	font-size: 22px;
+}
+#contact-form input[type="text"], #contact-form input[type="email"], #contact-form textarea{
+	margin-bottom: 15px;
+	border-radius: 0;
+}
+#contact-form .main-btn{
+	width: 100px;
+	height: 45px;
+	color: #9C9C9C;	
+	border-color: #9C9C9C;
+	font-size: 13px;
+	text-shadow: none;
+	transition: 1s;
+}
+#contact-form .main-btn:hover{	
+	color: #1E90FF;
+	border-color: #1E90FF;
+}
+#copy-area{
+	background-color: #363636;
+}
+#copy-area .container{
+	padding: 10px 0;	
+}
+#copy-area .container p{
+	margin-bottom: 0;
+	color: #CFCFCF;
+	text-align: center;
+}
+.blue{
+	color: #BBFFFF;
+	font-weight: 300;
+}
+/*Responsive*/
+@media(max-width: 768px){
+	.container{
+		padding: 20px 0;
+	}
+	#mainSlider .carousel-inner, #mainSlider .carousel-item{
+		height: auto;
+	}
+	#mainSlider .carousel-caption h2 {
+		font-size: 28px;
+	}
+	#mainSlider .carousel-caption p{
+		font-size: 18px;
+		margin-bottom: 40px;
+	}
+	.carousel-caption{
+		left: 10%;
+		right: 10%;
+	}
+	#about-area img{
+		margin-top: 100px;
+	}
+	.circle-box div{
+		padding: 0 10px; 
+	}
+	#data-area p{
+		font-size: 16px;
+	}
+	.card{		
+		height: 200px;
+	}
+	.card-title{
+		font-size: 16px;		
+	}
+	.card-text{
+		font-size: 13px;		
+	}
+	#apply-area .apply-box{
+		padding: 50px 25px;		
+	}
+	#apply-area h4{
+		margin-top: 0;
+	}
+	#news-area p{
+		width: 80%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	#email-input{
+		width: 90%;		
+	}
+	.form-news{	
+	margin: 0 15%;
+	}
+	#call-area {
+		margin-top: 30px;
+	}
+	#call-area .container{
+		padding: 30px;
+	}
+	#call-area p, #call-area #call-btn{
+		font-size: 18px;
+	}
+}
+	@media(max-width: 425px){			
+	#mainSlider .carousel-caption h2 {
+		font-size: 24px;
+		margin-top: 10px;
+		margin-bottom: 40px;			
+	}
+	#mainSlider .carousel-caption p{
+		display: none;				
+	}	
+	.main-btn{
+	border-radius: 20px;		
+	padding: 10px 8px;
+	font-size: 10px;		
+	}
+	.main-title{
+		font-size: 25px;
+		margin-top: 20px;
+		margin-bottom: 40px;
+	}
+	#about-area img{
+		margin-top: 0;
+	}
+	.about-title{
+		margin-top: 10px;
+	}
+	.circle-box{
+		width: 50%;
+	}
+	#team-area .col-md-3{
+		width: 40%;
+		margin: 20px 0 0 10px;		
+	}
+	#apply-area{
+		height: auto;
+	}
+	#company-img{
+		display: none;
+	}
+	#portfolio-area .filter-btn{
+		margin-bottom: 20px;
+	}
+	.project-box{
+		width: 50%;
+	}	
+	#news-area p{
+		font-size: 16px;
+		margin-top: 50px;
+	}
+	#email-input{
+		width: 100%;		
+	}
+	.form-news{		
+		margin: 0 1em 0 2em;
+	}
+	#call-area p, #call-area #call-btn{
+		font-size: 16px;
+		letter-spacing: 0;
+		margin: 0;
+		width: 50%;
+	}
+	.contact-box{
+		border: none;
+		margin-bottom: 0;
+	}
+}	
+	
+
+	
+
+
+
+}
