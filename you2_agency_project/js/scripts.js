@@ -123,40 +123,37 @@ $(document).ready(function(){
 			});
 		}
 	}
-
-	//Scroll para seções
-	let navBar = $('.nav-item');
-
-	let bannerSection = $('#mainSlider');
-	let aboutSection = $('#about-area');
-	let servicesSection = $('#services-area');
-	let teamSection = $('#team-area');
-	let portfolioSection = $('#portfolio-area');
-	let contactSection = $('#contact-area');
-
-	let scrollto = '';
-	$(navBtn).click(function(){
-		let btnId = $(this).attr('id');
-		console.log(btnId);
-
-		if (btnId == 'about-menu') {
-			scrollto = aboutSection;
-		}else if(btnId == 'services-menu'){
-			scrollto = servicesSection;
-		}else if(btnId == 'team-menu'){
-			scrollto = teamSection;
-		}else if (btnId == 'portfolio-menu'){
-			scrollto = portfolioSection;
-		}else if (btnId == 'contact-menu'){
-			scrollto == contactSection;
-		}else{
-			scrollto = bannerSection;
-		}
-
-		$([document.documentElement, document.body]).animate({
-			scrollTop: $(scrollTo).offset().top - 70
-		}, 1500);
-
-	});
 	
+
+	// Scroll para seções:
+
+	// identificar o clique, capturando todos os itens do menu
+	const menuItems = document.querySelectorAll('.navbar-nav a');
+
+	// verificar pra cada item da lista se foi clicado ou não
+	// add evento de click no item e função que será ativada
+	menuItems.forEach(item => {
+		item.addEventListener('click', scrollToIdOnClick); // função callback do evento
+	});
+
+	// criando a função referenciada acima
+	function scrollToIdOnClick(event) { // seu parâmetro é o próprio evento
+		event.preventDefault(); // retirando o comportamento padrão do evento (exibindo na url e pulando direto)
+		const to = getScrollTopByHref(event.target) - 40; // exibe qual link específico está sendo clicado
+		scrollToPosition(to);
+	};	
+	
+	// puxando o scrollTop pelo seu atributo: href
+	function getScrollTopByHref(element) {
+		const id = element.getAttribute('href');
+		return document.querySelector(id).offsetTop; // referenciando à seção correspondente
+	};	
+
+	function scrollToPosition(to) {
+		window.scroll({ // método do objeto window que permite mover a página, coordenada X e Y 
+			top: to,
+			behavior: "smooth",
+		});		
+	};
+
 });
